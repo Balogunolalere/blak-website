@@ -25,78 +25,78 @@ export default function ProjectsSection() {
     {
       id: "dba",
       title: "DBA INCOME BOOST",
-      industry: "Financial Services",
-      metric: "+142%",
-      description: "Increased lead generation for financial advisors through optimized UX and performance.",
+      industry: "Digital Marketing Education",
+      metric: "27.7k+",
+      description: "Official affiliate partner platform for Digital BOSS Academy with comprehensive digital marketing training and resources.",
       url: "https://dbaincomeboost.com",
       challenge:
-        "This financial education platform needed to increase qualified leads for their advisor network while providing valuable resources to visitors.",
+        "Create a high-converting affiliate platform that effectively showcases Digital BOSS Academy's comprehensive digital marketing program while maintaining a professional and trustworthy user experience.",
       solution:
-        "We rebuilt their platform with clear financial education pathways, advisor matching tools, and personalized retirement calculators to engage visitors and generate qualified leads.",
+        "Developed a modern, conversion-optimized platform featuring detailed program information, success stories, and streamlined enrollment process, integrated with advanced analytics and automated sales funnels.",
       results: [
-        "142% increase in conversion rate",
-        "68% reduction in page load time",
-        "3.2x increase in mobile conversions",
-        "52% increase in average session duration",
+        "27.7k+ official members onboarded",
+        "89% success rate for program participants",
+        "Up to 50% commission rate structure",
+        "Seamless integration with payment and course delivery systems"
       ],
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
     },
     {
       id: "novoagro",
       title: "NOVOAGRO LLP",
-      industry: "Agriculture",
-      metric: "3.2x",
-      description: "Expanded global market reach for Kazakhstan's leading agricultural exporter.",
+      industry: "Oil Refining",
+      metric: "500K+",
+      description: "World-class oil refining solutions with state-of-the-art processing technology.",
       url: "https://novoagrollp.kz",
       challenge:
-        "This major Kazakh grain and oilseed exporter needed to showcase their quality standards and production capacity to international buyers and trading partners.",
+        "Establish a digital presence that effectively communicates NovoAgro's position as a leading force in the refining industry while showcasing their advanced technological capabilities and global reach.",
       solution:
-        "We created a multilingual platform featuring their extensive product range, certification details, and production facilities, with region-specific content for key export markets.",
+        "Developed a modern corporate platform highlighting their 500,000 BPD processing capacity, international certifications, and commitment to sustainable practices across their global operations.",
       results: [
-        "3.2x increase in international inquiries",
-        "First page rankings for 28 key industry terms",
-        "187% increase in organic traffic",
-        "Expanded market reach to 14 new countries",
+        "500K+ BPD processing capacity",
+        "45+ countries served globally",
+        "20+ years of industry excellence",
+        "6 major ISO certifications achieved"
       ],
       technologies: ["React", "i18next", "Node.js", "MongoDB"],
     },
     {
       id: "philex",
       title: "PHILEX BAR",
-      industry: "Entertainment",
-      metric: "+89%",
-      description: "Transformed digital presence for this premium cocktail bar and entertainment venue.",
+      industry: "Hospitality & Entertainment",
+      metric: "24/7",
+      description: "Premium cocktail lounge offering vibrant nights and culinary delights in Ibadan.",
       url: "https://www.philexentertainment.com/bar",
       challenge:
-        "This upscale cocktail bar and event space needed to showcase their unique atmosphere and simplify their event booking process to attract more private functions.",
+        "Create an immersive digital platform for a high-end cocktail bar that captures its sophisticated atmosphere while streamlining the reservation process.",
       solution:
-        "We developed an immersive digital experience with 360° virtual tours, mixologist profiles, and an integrated booking system for both bar reservations and private events.",
+        "Built an elegant website featuring dynamic content, real-time booking system, and showcasing their unique blend of nightlife entertainment and culinary excellence.",
       results: [
-        "89% increase in online bookings",
-        "42% reduction in booking abandonment",
-        "4.8/5 average user satisfaction rating",
-        "62% increase in private event inquiries",
+        "Automated 24/7 table reservation system",
+        "Integrated events calendar and booking",
+        "Mobile-optimized dining menus",
+        "Seamless social media integration"
       ],
-      technologies: ["Three.js", "WebGL", "Express", "PostgreSQL"],
+      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
     },
     {
       id: "swap",
-      title: "SWAP.COM",
-      industry: "E-commerce",
-      metric: "$2.4M",
-      description: "Revitalized this online consignment and thrift store with performance-focused rebuild.",
-      url: "https://swap.com",
+      title: "SWAP",
+      industry: "Trade & Commerce",
+      metric: "P2P",
+      description: "Modern trade-by-barter platform revolutionizing community-based item exchange without monetary transactions.",
+      url: "https://v0-neobrutalist-design-platform-dwhqnb.vercel.app",
       challenge:
-        "This major online secondhand marketplace was struggling with site performance issues and complex inventory management for their vast catalog of unique items.",
+        "Create an intuitive platform that facilitates direct item-for-item trading in local communities while ensuring user safety and engagement in a cashless exchange system.",
       solution:
-        "We rebuilt their platform with advanced search filters, personalized recommendations, and an optimized checkout flow while implementing a robust inventory system for their one-of-a-kind items.",
+        "Developed a neobrutalist design platform with seamless item posting, offer management, and secure meetup coordination, emphasizing community trust and easy navigation.",
       results: [
-        "$2.4M increase in annual revenue",
-        "73% reduction in cart abandonment",
-        "2.8x improvement in site performance",
-        "41% increase in average order value",
+        "Zero-cost trade implementation",
+        "Multi-category item support",
+        "Real-time messaging system",
+        "Built-in safety protocols"
       ],
-      technologies: ["Next.js", "TypeScript", "Stripe", "AWS"],
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     },
   ]
 

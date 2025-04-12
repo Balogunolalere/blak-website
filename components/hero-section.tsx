@@ -125,7 +125,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <h2 className="font-mono text-6xl sm:text-7xl md:text-9xl lg:text-[12rem] font-bold leading-[1.2] tracking-[0.02em] max-w-7xl">
+          <h2 className="font-mono text-6xl sm:text-7xl md:text-7xl lg:text-9xl font-bold leading-[1.2] tracking-[0.02em] max-w-7xl">
             DIGITAL ARCHITECTS FOR THE MODERN WEB
           </h2>
           <p className="font-mono text-base sm:text-lg md:text-xl mt-2 sm:mt-4 tracking-tight">
