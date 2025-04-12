@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom styles */
+.border-3 {
+  border-width: 3px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease forwards;
+}
+
+/* Transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #990000;
+  outline-offset: 2px;
+}
+
+/* Add responsive typography helpers */
+@layer utilities {
+  .text-responsive {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+  }
+
+  .heading-responsive {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+
+  .heading-large-responsive {
+    font-size: clamp(2rem, 10vw, 5rem);
+  }
+}
+
+/* Improve tap targets for mobile */
+@media (max-width: 640px) {
+  button,
+  a,
+  [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+}
+
+/* Add better spacing for mobile */
+@media (max-width: 640px) {
+  section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .space-y-mobile > * + * {
+    margin-top: 0.5rem;
+  }
+
+  /* Extreme space reduction for hero section */
+  #hero {
+    min-height: auto;
+    height: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  #hero h2 {
+    font-size: 2.25rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  #hero p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #hero button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #services {
+    padding-top: 1rem;
+  }
+}
+
+/* Fix iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+  #hero {
+    height: auto;
+    min-height: auto;
+  }
+}
