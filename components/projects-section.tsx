@@ -28,7 +28,7 @@ export default function ProjectsSection() {
       industry: "Digital Marketing Education",
       metric: "27.7k+",
       description: "Official affiliate partner platform for Digital BOSS Academy with comprehensive digital marketing training and resources.",
-      url: "https://dbaincomeboost.com",
+      url: "https://www.dbaincomeboost.com/",
       challenge:
         "Create a high-converting affiliate platform that effectively showcases Digital BOSS Academy's comprehensive digital marketing program while maintaining a professional and trustworthy user experience.",
       solution:
@@ -47,7 +47,7 @@ export default function ProjectsSection() {
       industry: "Oil Refining",
       metric: "500K+",
       description: "World-class oil refining solutions with state-of-the-art processing technology.",
-      url: "https://novoagrollp.kz",
+      url: "https://www.novoagrollp.kz/",
       challenge:
         "Establish a digital presence that effectively communicates NovoAgro's position as a leading force in the refining industry while showcasing their advanced technological capabilities and global reach.",
       solution:
@@ -58,7 +58,7 @@ export default function ProjectsSection() {
         "20+ years of industry excellence",
         "6 major ISO certifications achieved"
       ],
-      technologies: ["React", "i18next", "Node.js", "MongoDB"],
+      technologies: ["Bootstrap", "jQuery", "Animate.css"],
     },
     {
       id: "philex",
@@ -77,7 +77,7 @@ export default function ProjectsSection() {
         "Mobile-optimized dining menus",
         "Seamless social media integration"
       ],
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      technologies: ["Wordpress", "Elemental", "jQuery", "Cloudinary"],
     },
     {
       id: "swap",
