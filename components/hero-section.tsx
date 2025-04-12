@@ -119,7 +119,7 @@ export default function HeroSection() {
       )}
 
       {/* Main content */}
-      <div className="mt-4 sm:mt-8">
+      <div className="mt-24 sm:mt-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -143,7 +143,7 @@ export default function HeroSection() {
       </div>
 
       {/* Footer */}
-      <div className="mt-4 sm:mt-8 mb-4 flex justify-center">
+      <div className="mt-24 sm:mt-8 mb-4 flex justify-center">
         <button
           onClick={() => scrollToSection("services")}
           aria-label="Scroll down"
