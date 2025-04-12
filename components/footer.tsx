@@ -105,10 +105,10 @@ export default function Footer() {
           © {new Date().getFullYear()} bläk. All rights reserved.
         </p>
         <div className="flex space-x-6 font-mono text-xs">
-          <Link href="#" className="hover:text-brand transition-colors">
+          <Link href="/privacy-policy" className="hover:text-brand transition-colors">
             Privacy Policy
           </Link>
-          <Link href="#" className="hover:text-brand transition-colors">
+          <Link href="/terms-of-service" className="hover:text-brand transition-colors">
             Terms of Service
           </Link>
         </div>
