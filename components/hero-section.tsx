@@ -119,19 +119,20 @@ export default function HeroSection() {
       )}
 
       {/* Main content */}
-      <div className="mt-24 sm:mt-8">
+      <div className="flex-1 flex flex-col justify-center mt-8 sm:mt-12 md:mt-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
+          className="max-w-screen-xl mx-auto"
         >
-          <h2 className="font-mono text-6xl sm:text-7xl md:text-7xl lg:text-9xl font-bold leading-[1.2] tracking-[0.02em] max-w-7xl">
+          <h2 className="font-mono text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold leading-[1.1] tracking-[0.02em] max-w-7xl">
             DIGITAL ARCHITECTS FOR THE MODERN WEB
           </h2>
-          <p className="font-mono text-base sm:text-lg md:text-xl mt-2 sm:mt-4 tracking-tight">
+          <p className="font-mono text-base sm:text-lg md:text-xl mt-4 sm:mt-6 tracking-tight">
             Web Apps | Website Rebuilds | Web Scraping | AI Agents | Automation
           </p>
-          <div className="mt-4 sm:mt-6">
+          <div className="mt-6 sm:mt-8">
             <Button
               onClick={() => scrollToSection("contact")}
               className="font-mono text-base sm:text-lg bg-black text-white hover:bg-brand border-3 border-black rounded-none px-6 sm:px-8 py-2 sm:py-4 h-auto dark:bg-white dark:text-black dark:hover:bg-brand dark:hover:text-white"
@@ -143,7 +144,7 @@ export default function HeroSection() {
       </div>
 
       {/* Footer */}
-      <div className="mt-24 sm:mt-8 mb-4 flex justify-center">
+      <div className="mt-12 sm:mt-16 md:mt-auto mb-8 flex justify-center">
         <button
           onClick={() => scrollToSection("services")}
           aria-label="Scroll down"
