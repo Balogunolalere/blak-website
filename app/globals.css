@@ -78,6 +78,13 @@
   }
 }
 
+@layer components {
+  .loading-screen {
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+}
+
 /* Custom styles */
 .border-3 {
   border-width: 3px;
