@@ -9,9 +9,9 @@ export default function Footer() {
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null)
 
   const socialLinks = [
-    { name: "github", icon: <Github size={24} />, url: "https://github.com" },
-    { name: "twitter", icon: <Twitter size={24} />, url: "https://twitter.com" },
-    { name: "linkedin", icon: <Linkedin size={24} />, url: "https://linkedin.com" },
+    { name: "github", icon: <Github size={24} />, url: "https://github.com/Balogunolalere" },
+    { name: "twitter", icon: <Twitter size={24} />, url: "https://x.com/___faust____" },
+    { name: "linkedin", icon: <Linkedin size={24} />, url: "https://www.linkedin.com/in/olalere-balogun-271980253/" },
   ]
 
   const handleScroll = (id: string) => {
@@ -95,8 +95,8 @@ export default function Footer() {
               </motion.div>
             ))}
           </div>
-          <p className="font-mono text-sm">hello@blak.co</p>
-          <p className="font-mono text-sm">+1 (555) 123-4567</p>
+          <p className="font-mono text-sm">lordareello@gmail.com</p>
+          <p className="font-mono text-sm">+2349077406839</p>
         </div>
       </div>
 

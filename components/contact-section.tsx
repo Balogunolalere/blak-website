@@ -62,9 +62,19 @@ export default function ContactSection() {
 
     setFormStatus("submitting")
 
-    // Simulate API call
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
+
       setFormStatus("success")
       setFormData({
         name: "",
@@ -81,10 +91,9 @@ export default function ContactSection() {
 
   const budgetOptions = [
     { value: "", label: "Select a budget range" },
-    { value: "2m-4m", label: "₦2,000,000 - ₦4,000,000" },
-    { value: "4m-10m", label: "₦4,000,000 - ₦10,000,000" },
-    { value: "10m-20m", label: "₦10,000,000 - ₦20,000,000" },
-    { value: "20m+", label: "₦20,000,000+" },
+    { value: "400k-2m", label: "₦400,000 - ₦2,000,000" },
+    { value: "2m-5m", label: "₦2,000,000 - ₦5,000,000" },
+    { value: "5m+", label: "₦5,000,000+" },
   ]
 
   return (
@@ -121,7 +130,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">EMAIL</p>
-                <p>hello@blak.co</p>
+                <p>lordareello@gmail.com</p>
               </div>
             </div>
 
@@ -136,22 +145,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">PHONE</p>
-                <p>+1 (555) 123-4567</p>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 border-3 border-black dark:border-white flex items-center justify-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">LOCATION</p>
-                <p>San Francisco, CA</p>
+                <p>+2349077406839</p>
               </div>
             </div>
           </div>

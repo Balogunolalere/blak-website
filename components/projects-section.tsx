@@ -23,25 +23,6 @@ export default function ProjectsSection() {
 
   const projects: Project[] = [
     {
-      id: "dba",
-      title: "DBA INCOME BOOST",
-      industry: "Digital Marketing Education",
-      metric: "27.7k+",
-      description: "Official affiliate partner platform for Digital BOSS Academy with comprehensive digital marketing training and resources.",
-      url: "https://www.dbaincomeboost.com/",
-      challenge:
-        "Create a high-converting affiliate platform that effectively showcases Digital BOSS Academy's comprehensive digital marketing program while maintaining a professional and trustworthy user experience.",
-      solution:
-        "Developed a modern, conversion-optimized platform featuring detailed program information, success stories, and streamlined enrollment process, integrated with advanced analytics and automated sales funnels.",
-      results: [
-        "27.7k+ official members onboarded",
-        "89% success rate for program participants",
-        "Up to 50% commission rate structure",
-        "Seamless integration with payment and course delivery systems"
-      ],
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-    },
-    {
       id: "novoagro",
       title: "NOVOAGRO LLP",
       industry: "Oil Refining",
@@ -97,6 +78,63 @@ export default function ProjectsSection() {
         "Built-in safety protocols"
       ],
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    },
+    {
+      id: "kenjo",
+      title: "KENJO KOUTURE",
+      industry: "Fashion & E-commerce",
+      metric: "STORE",
+      description: "Where Elegance Meets Trends - A modern fashion brand offering chic collections for men and women.",
+      url: "https://kenjokouture.com/",
+      challenge:
+        "Design a seamless e-commerce experience that showcases the brand's elegant and trendy collections while ensuring easy navigation and secure checkout.",
+      solution:
+        "Developed a Shopify-powered platform featuring high-quality imagery, categorized collections, and a responsive design for an optimal shopping experience on all devices.",
+      results: [
+        "Increased online sales revenue",
+        "Enhanced mobile user experience",
+        "Streamlined inventory management",
+        "Growing social media presence"
+      ],
+      technologies: ["Shopify", "Liquid", "JavaScript", "Social Media"],
+    },
+    {
+      id: "chefnitaa",
+      title: "CHEF NITAA",
+      industry: "Culinary Arts & Hospitality",
+      metric: "100%",
+      description: "Culinary innovation rooted in nature by Chef Olusola Layi-Balogun, blending molecular gastronomy with organic farming.",
+      url: "https://www.chefnitaa.com/",
+      challenge:
+        "Create a digital portfolio that reflects the chef's unique philosophy of 'Thoughtful food, progressive technique, grown with care' and facilitates event bookings and course registrations.",
+      solution:
+        "Built a visually stunning website with an integrated booking system for private dining and culinary courses, featuring a gallery and journal to share the chef's journey.",
+      results: [
+        "Successful launch of culinary courses",
+        "Increased booking efficiency",
+        "Showcase of molecular gastronomy",
+        "Stronger brand identity"
+      ],
+      technologies: ["Next.js", "React", "Framer Motion", "Cloudinary"],
+    },
+    {
+      id: "infilink",
+      title: "INFILINK CONNECT",
+      industry: "Telecommunications / ISP",
+      metric: "1Gbps",
+      description: "Reliable internet service provider serving Ikorodu with high-speed fiber connectivity and instant access tokens.",
+      url: "https://www.infilinkconnect.com/",
+      challenge:
+        "Provide a robust platform for an ISP to manage customer subscriptions, automate token delivery, and offer reliable support info to the Ikorodu community.",
+      solution:
+        "Developed a user-friendly portal with automated payment processing via Paystack, instant token generation, and comprehensive plan comparison tools.",
+      results: [
+        "Instant service activation",
+        "Seamless Paystack integration",
+        "24/7 support accessibility",
+        "Simplified plan management"
+      ],
+      technologies: ["React", "Paystack API", "Node.js", "Tailwind CSS"],
     },
   ]
 
