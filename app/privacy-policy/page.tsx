@@ -71,8 +71,8 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl font-bold mb-4">6. Contact Us</h2>
             <p className="text-muted-foreground">
               If you have any questions about this Privacy Policy, please contact us at{" "}
-              <a href="mailto:hello@blak.co" className="text-brand hover:underline">
-                hello@blak.co
+              <a href="mailto:hello@blakstudio.dev" className="text-brand hover:underline">
+                hello@blakstudio.dev
               </a>
             </p>
           </section>

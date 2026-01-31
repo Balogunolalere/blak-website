@@ -92,8 +92,8 @@ export default function TermsOfService() {
             <h2 className="text-xl font-bold mb-4">10. Contact</h2>
             <p className="text-muted-foreground">
               For questions about these Terms of Service, please contact us at{" "}
-              <a href="mailto:hello@blak.co" className="text-brand hover:underline">
-                hello@blak.co
+              <a href="mailto:hello@blakstudio.dev" className="text-brand hover:underline">
+                hello@blakstudio.dev
               </a>
             </p>
           </section>

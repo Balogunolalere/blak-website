@@ -6,7 +6,9 @@ export async function POST(req: Request) {
     const { name, email, company, budget, message } = await req.json();
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.zoho.com',
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -138,11 +140,11 @@ export async function POST(req: Request) {
                 
                 <div style="display: flex; margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
                   <div style="flex: 1;">
-                    <span style="font-size: 10px; text-transform: uppercase; color: #666666; display: block; margin-bottom: 3px;">Company</span>
+                    <span style="font-size: 11px; text-transform: uppercase; color: #666666; display: block; letter-spacing: 1px; margin-bottom: 5px;">Company</span>
                     <div style="font-size: 14px; font-weight: bold;">${company || '-'}</div>
                   </div>
                    <div style="flex: 1;">
-                    <span style="font-size: 10px; text-transform: uppercase; color: #666666; display: block; margin-bottom: 3px;">Budget</span>
+                    <span style="font-size: 11px; text-transform: uppercase; color: #666666; display: block; letter-spacing: 1px; margin-bottom: 5px;">Budget</span>
                     <div style="font-size: 14px; font-weight: bold;">${budget || '-'}</div>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Github, Twitter, Linkedin } from "lucide-react"
+import { Instagram } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState } from "react"
 
@@ -9,9 +9,7 @@ export default function Footer() {
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null)
 
   const socialLinks = [
-    { name: "github", icon: <Github size={24} />, url: "https://github.com/Balogunolalere" },
-    { name: "twitter", icon: <Twitter size={24} />, url: "https://x.com/___faust____" },
-    { name: "linkedin", icon: <Linkedin size={24} />, url: "https://www.linkedin.com/in/olalere-balogun-271980253/" },
+    { name: "instagram", icon: <Instagram size={24} />, url: "https://www.instagram.com/blak.dev/" },
   ]
 
   const handleScroll = (id: string) => {
@@ -95,7 +93,7 @@ export default function Footer() {
               </motion.div>
             ))}
           </div>
-          <p className="font-mono text-sm">lordareello@gmail.com</p>
+          <p className="font-mono text-sm">hello@blakstudio.dev</p>
           <p className="font-mono text-sm">+2349077406839</p>
         </div>
       </div>
