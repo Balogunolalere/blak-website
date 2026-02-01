@@ -43,7 +43,11 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative flex flex-col min-h-screen px-4 md:px-12 lg:px-24">
+    <section 
+      id="hero" 
+      className="relative flex flex-col min-h-screen px-4 md:px-12 lg:px-24"
+      style={{ minHeight: "100dvh" }}
+    >
       {/* Header */}
       <div className="flex justify-between items-center pt-4 pb-2 h-16">
         <motion.h1
@@ -126,16 +130,16 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="max-w-screen-xl mx-auto"
         >
-          <h2 className="font-mono text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold leading-[1.1] tracking-[0.02em] max-w-7xl">
+          <h2 className="font-mono text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-[1.0] tracking-[0.02em] max-w-7xl">
             DIGITAL ARCHITECTS FOR THE MODERN WEB
           </h2>
-          <p className="font-mono text-base sm:text-lg md:text-xl mt-4 sm:mt-6 tracking-tight">
+          <p className="font-mono text-lg sm:text-xl md:text-2xl mt-8 sm:mt-10 tracking-tight">
             Web Apps | Website Rebuilds | Web Scraping | AI Agents | Automation
           </p>
-          <div className="mt-6 sm:mt-8">
+          <div className="mt-10 sm:mt-12">
             <Button
               onClick={() => scrollToSection("contact")}
-              className="font-mono text-base sm:text-lg bg-black text-white hover:bg-brand border-3 border-black rounded-none px-6 sm:px-8 py-2 sm:py-4 h-auto dark:bg-white dark:text-black dark:hover:bg-brand dark:hover:text-white"
+              className="font-mono text-lg sm:text-xl bg-black text-white hover:bg-brand border-3 border-black rounded-none px-8 py-4 sm:px-10 sm:py-5 h-auto dark:bg-white dark:text-black dark:hover:bg-brand dark:hover:text-white"
             >
               START A PROJECT
             </Button>
@@ -144,7 +148,7 @@ export default function HeroSection() {
       </div>
 
       {/* Footer */}
-      <div className="mt-12 sm:mt-16 md:mt-auto mb-8 flex justify-center">
+      <div className="mt-auto mb-8 flex justify-center">
         <button
           onClick={() => scrollToSection("services")}
           aria-label="Scroll down"
