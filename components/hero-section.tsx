@@ -141,7 +141,7 @@ export default function HeroSection() {
             </motion.span>
           </h2>
           <p className="font-mono text-lg sm:text-lg md:text-xl mt-8 sm:mt-10 tracking-tight">
-            Web Apps | Website Rebuilds | Web Scraping | AI Agents | Automation
+            Cut operational costs and automate workflows with custom Web Apps and AI solutions
           </p>
           <div className="mt-8 sm:mt-10">
             <Button
