@@ -130,7 +130,9 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">EMAIL</p>
-                <p>hello@blakstudio.dev</p>
+                <a href="mailto:hello@blakstudio.dev" className="hover:text-brand transition-colors">
+                  hello@blakstudio.dev
+                </a>
               </div>
             </div>
 

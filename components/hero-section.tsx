@@ -50,14 +50,14 @@ export default function HeroSection() {
     >
       {/* Header */}
       <div className="flex justify-between items-center pt-4 pb-2 h-16">
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="font-mono text-xl sm:text-2xl font-bold tracking-tighter"
         >
           bläk
-        </motion.h1>
+        </motion.div>
 
         <div className="flex items-center space-x-4">
           <ThemeToggle />
@@ -130,7 +130,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="max-w-screen-xl mx-auto"
         >
-          <h2 className="font-mono text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-[0.02em] max-w-7xl">
+          <h1 className="font-mono text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-[0.02em] max-w-7xl">
             WE BUILD WEB APPS, AI AGENTS & AUTOMATION SYSTEMS THAT{" "}
             <motion.span
               className="text-brand"
@@ -139,7 +139,7 @@ export default function HeroSection() {
             >
               SCALE YOUR BUSINESS.
             </motion.span>
-          </h2>
+          </h1>
           <p className="font-mono text-lg sm:text-lg md:text-xl mt-8 sm:mt-10 tracking-tight">
             Cut operational costs and automate workflows with custom Web Apps and AI solutions
           </p>

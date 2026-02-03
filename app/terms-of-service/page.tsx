@@ -1,4 +1,14 @@
 import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  description: "Terms of Service for bläk - The rules and regulations for the use of bläk's Website and Services.",
+  openGraph: {
+    title: "Terms of Service | bläk",
+    description: "Review our Terms of Service governing the use of our digital architecture services.",
+  },
+}
 
 export default function TermsOfService() {
   return (

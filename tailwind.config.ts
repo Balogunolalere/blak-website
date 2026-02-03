@@ -59,7 +59,8 @@ const config = {
         "3": "3px",
       },
       fontFamily: {
-        mono: ["Space Mono", "monospace"],
+        mono: ["var(--font-space-mono)", "monospace"],
+        sans: ["var(--font-inter)", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
